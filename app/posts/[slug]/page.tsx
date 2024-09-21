@@ -14,11 +14,14 @@ export default async function PostPage({ params }: Props) {
   const postData = await getPostData(slug);
 
   return (
-    <div>
-      <h1>{postData.frontmatter.title}</h1>
-      <p>{postData.frontmatter.date}</p>
+    <div className="px-6 py-10 max-w-4xl mx-auto">
+      <h1 className="text-4xl font-bold mb-4">{postData.frontmatter.title}</h1>
+      <p className="text-sm text-gray-500 mb-6">{new Date(postData.frontmatter.date).toLocaleDateString()}</p>
       {/* Render the markdown content as HTML */}
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <div
+        className="prose prose-lg"
+        dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+      />
     </div>
   );
 }

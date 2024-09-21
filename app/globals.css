@@ -20,6 +20,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Custom prose styles for dark theme */
+.prose {
+  @apply text-gray-200; /* Base text color */
+}
+
+.prose h1, .prose h2, .prose h3 {
+  @apply text-custom-blue; /* Custom color for headings */
+}
+
+.prose p, .prose li, .prose code {
+  @apply text-custom-gray; /* Custom color for paragraph and list items */
+}
+
+.prose a {
+  @apply text-custom-blue; /* Custom color for links */
+  @apply underline; /* Optional: Add underline for links */
+}
+
+.prose a:hover {
+  @apply text-gray-400; /* Color on hover */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
