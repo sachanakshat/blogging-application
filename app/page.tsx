@@ -1,16 +1,18 @@
 import Image from "next/image";
 import { getSortedPostsData } from '../lib/posts';
 
-export async function getStaticProps() {
-  const allPostsData:any = getSortedPostsData();
-  return {
-    props: {
-      allPostsData
-    }
-  };
-}
+// export async function getStaticProps() {
+//   const allPostsData = getSortedPostsData();
+//   return {
+//     props: {
+//       allPostsData
+//     }
+//   };
+// }
 
-export default function Home({ allPostsData:any }) {
+export default async function Home() {
+  const allPostsData = await getSortedPostsData();
+
   return (
     <ul>
       {allPostsData.map(({ id, date, title }) => (

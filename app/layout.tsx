@@ -12,7 +12,7 @@ import {
     NavigationMenuTrigger,
     NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
-import { Header } from "@/components/header";
+import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
     title: "Blogging Application",
