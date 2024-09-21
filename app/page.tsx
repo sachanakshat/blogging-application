@@ -17,11 +17,12 @@ export default async function Home() {
     <ul>
       {allPostsData.map(({ id, date, title }) => (
         <li key={id}>
-          {title}
-          <br />
-          {id}
-          <br />
           {date}
+          {title}
+          {/* <br /> */}
+          {/* {id} */}
+          {/* <br /> */}
+          <br/>
         </li>
       ))}
     </ul>
