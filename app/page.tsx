@@ -1,10 +1,10 @@
-import Image from "next/image";
-import { getSortedPostsData } from '../lib/posts';
+// import Image from "next/image";
+// import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 
 
 export default async function Home() {
-  const allPostsData = await getSortedPostsData();
+  // const allPostsData = await getSortedPostsData();
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-gray-200 p-6">

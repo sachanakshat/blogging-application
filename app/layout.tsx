@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "./globals.css";
 
-import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
+// import {
+//     NavigationMenu,
+//     NavigationMenuContent,
+//     NavigationMenuIndicator,
+//     NavigationMenuItem,
+//     NavigationMenuLink,
+//     NavigationMenuList,
+//     NavigationMenuTrigger,
+//     NavigationMenuViewport,
+// } from "@/components/ui/navigation-menu";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
