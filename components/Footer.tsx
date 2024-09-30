@@ -12,7 +12,7 @@ export function Footer() {
             rel="noreferrer"
             className="font-medium underline underline-offset-4"
           >
-            Tanya Gautam
+            Akshat Sachan
           </a>
           . The source code is available on{" "}
           <a

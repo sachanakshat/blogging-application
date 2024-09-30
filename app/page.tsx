@@ -34,7 +34,7 @@ export default async function Home() {
           </div>
         </Link>
 
-        <Link href="https://github.com/GautamTanya13">
+        <Link href="https://github.com/sachanakshat/">
           <div className="bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
             <h2 className="text-2xl font-semibold mb-2">About This Blog</h2>
             <p className="text-gray-400">
